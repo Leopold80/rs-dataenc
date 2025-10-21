@@ -27,7 +27,7 @@ fn main() {
     //     mode: cil::EncDecMode::Dec,
     // };
 
-    let mut paths: Vec<std::path::PathBuf> = Vec::new();
+    let mut paths: Vec<PathBuf> = Vec::new();
     cil.files.iter().for_each(|f_path| {
         let path = Path::new(f_path);
         if !path.try_exists().unwrap_or_else(|e| panic!("{}", e)) {

@@ -1,4 +1,4 @@
-use clap::{command, ValueEnum, Parser};
+use clap::{ValueEnum, Parser};
 
 #[derive(Parser, Debug)]
 #[command(version, author, about, long_about = None)]
